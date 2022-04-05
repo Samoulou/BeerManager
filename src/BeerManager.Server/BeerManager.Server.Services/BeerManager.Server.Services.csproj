@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BeerManager.Core.Data\BeerManager.Core.Data.csproj" />
+    <ProjectReference Include="..\..\BeerManager.Core\BeerManager.Core.Data\BeerManager.Core.Data.csproj" />
   </ItemGroup>
 
 </Project>

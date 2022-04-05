@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerManager", "BeerManager\BeerManager.csproj", "{95AD540B-A94D-45EC-970E-F134D4DC89E6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0264F3C0-3532-48D7-B951-9C90523F629A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{08A2B57C-C8A6-4353-8CD0-EE946408A49A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{A145BBED-4222-43C2-A10C-22DC8952EE07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerManager.Server.Services", "src\BeerManager.Server\BeerManager.Server.Services\BeerManager.Server.Services.csproj", "{BE9503F9-DF1E-4CF1-A0A2-9D4925C71761}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeerManager.Core.Data", "src\BeerManager.Core\BeerManager.Core.Data\BeerManager.Core.Data.csproj", "{807D32E3-7805-4CA8-AAF8-759FE069FE35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +19,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{95AD540B-A94D-45EC-970E-F134D4DC89E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{95AD540B-A94D-45EC-970E-F134D4DC89E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{95AD540B-A94D-45EC-970E-F134D4DC89E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{95AD540B-A94D-45EC-970E-F134D4DC89E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE9503F9-DF1E-4CF1-A0A2-9D4925C71761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE9503F9-DF1E-4CF1-A0A2-9D4925C71761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE9503F9-DF1E-4CF1-A0A2-9D4925C71761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE9503F9-DF1E-4CF1-A0A2-9D4925C71761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{807D32E3-7805-4CA8-AAF8-759FE069FE35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{807D32E3-7805-4CA8-AAF8-759FE069FE35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{807D32E3-7805-4CA8-AAF8-759FE069FE35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{807D32E3-7805-4CA8-AAF8-759FE069FE35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08A2B57C-C8A6-4353-8CD0-EE946408A49A} = {0264F3C0-3532-48D7-B951-9C90523F629A}
+		{A145BBED-4222-43C2-A10C-22DC8952EE07} = {0264F3C0-3532-48D7-B951-9C90523F629A}
+		{BE9503F9-DF1E-4CF1-A0A2-9D4925C71761} = {A145BBED-4222-43C2-A10C-22DC8952EE07}
+		{807D32E3-7805-4CA8-AAF8-759FE069FE35} = {08A2B57C-C8A6-4353-8CD0-EE946408A49A}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3D6EC886-267D-4D93-A2F7-1BF9F7384049}
+		SolutionGuid = {E7EC4C10-DAB4-42FE-9CBF-199164C46DC1}
 	EndGlobalSection
 EndGlobal
